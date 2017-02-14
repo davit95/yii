@@ -1,0 +1,564 @@
+@media(max-width:320px){
+    body .subscription-list .yellow-btn {
+    font-size: 12px;
+    padding: 9px 10px;
+    }
+    body .subscription-list > li .col-md-3 > div {
+    font-size: 14px;
+    }
+}
+@media (max-width:360px){
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin-left: 7px;
+    }
+    #submit-links{
+        max-width: 106px;
+        font-size: 14px;
+    }
+    table.table-bordered{
+        font-size: 12px;
+    }
+    table.table-bordered tr th {
+        padding: 7px !important;
+    }
+    .dropdown-menu{
+        min-width: 67px;
+        left: -16px;
+    }
+    body.user-profile main aside {
+    width: 13%;
+    }
+    .profile-menu > li:before {
+    left: 13px !important;
+  }
+  .user-profile .profile-menu > li {
+    height: 45px;
+    }
+    body.user-profile main .profile-content {
+    padding: 15px;
+    }
+    body .subscription-list > li {
+    padding: 10px;
+    }
+    .subscription-list li .col-md-3 {
+    font-size: 14px;
+    padding: 0;
+    }
+    .subscription-list > li .col-md-3 > div {
+    font-size: 17px;
+    }
+    body .vaucher-form {
+    width: 100%;
+    }
+    body .xs-show{
+        display: block;
+    }
+    .referal-content .earnings-per-day .col-md-8 {
+    margin-bottom: 10px;
+    }
+    body.user-profile main .profile-content {
+        width: 87%;
+    }
+    .table td {
+    font-size: 13px;
+    }
+    .transactions-content nav {
+    clear: both;
+    float: none;
+    position: relative;
+    text-align: center;
+    top: 10px;
+    }
+}
+
+@media (min-width:361px) and (max-width:450px){
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin-left: 7px;
+    }
+    table.table-bordered{
+        font-size: 12px;
+    }
+    table.table-bordered tr th {
+        padding: 7px !important;
+    }
+    .dropdown-menu{
+        min-width: 67px;
+        left: -16px;
+    }
+    .profile-menu > li:before {
+        left: 13px !important;
+    }
+    .user-profile .profile-menu > li {
+        height: 45px;
+    }
+    body.user-profile main .profile-content {
+        padding: 15px;
+    }
+    body .subscription-list > li {
+        padding: 10px;
+    }
+    .subscription-list li .col-md-3 {
+        font-size: 14px;
+        padding: 0;
+    }
+    .subscription-list > li .col-md-3 > div {
+        font-size: 17px;
+    }
+    body .vaucher-form {
+        width: 100%;
+    }
+    body .xs-show{
+        display: block;
+    }
+    .referal-content .earnings-per-day .col-md-8 {
+        margin-bottom: 10px;
+    }
+    body.user-profile main .profile-content {
+        width: 89%;
+    }
+    body.user-profile main aside {
+        width: 11%;
+    }
+    .table td {
+        font-size: 13px;
+    }
+    .transactions-content nav {
+        clear: both;
+        float: none;
+        position: relative;
+        text-align: center;
+        top: 10px;
+    }
+    .user-profile aside {
+        overflow: hidden;
+    }
+    .user-profile .profile-menu > li {
+        padding-left: 50px;
+    }
+
+    body .footer-menu li,
+    body .easy-to-work .navigation,
+    body .menu ul li {
+        display: block;
+    }
+
+    body > header nav.menu {
+        line-height: 28px;
+    }
+}
+
+@media (min-width:451px) and (max-width:600px){
+    .g-recaptcha {
+        transform:scale(0.77);
+        transform-origin:0 0;
+        margin-left: 7px;
+    }
+    table.table-bordered{
+        font-size: 12px;
+    }
+    table.table-bordered tr th {
+        padding: 7px !important;
+    }
+    .dropdown-menu{
+        min-width: 67px;
+        left: -16px;
+    }
+    .profile-menu > li:before {
+        left: 13px !important;
+    }
+    .user-profile .profile-menu > li {
+        height: 45px;
+    }
+    body.user-profile main .profile-content {
+        padding: 15px;
+    }
+    body .subscription-list > li {
+        padding: 10px;
+    }
+    .subscription-list li .col-md-3 {
+        font-size: 14px;
+        padding: 0;
+    }
+    .subscription-list > li .col-md-3 > div {
+        font-size: 17px;
+    }
+    body .vaucher-form {
+        width: 100%;
+    }
+    body .xs-show{
+        display: block;
+    }
+    .referal-content .earnings-per-day .col-md-8 {
+        margin-bottom: 10px;
+    }
+    body.user-profile main .profile-content {
+        width: 92%;
+    }
+    body.user-profile main aside {
+        width: 8%;
+    }
+    .table td {
+        font-size: 13px;
+    }
+    .transactions-content nav {
+        clear: both;
+        float: none;
+        position: relative;
+        text-align: center;
+        top: 10px;
+    }
+    .user-profile aside {
+        overflow: hidden;
+    }
+    .user-profile .profile-menu > li {
+        padding-left: 50px;
+    }
+
+    body .footer-menu li,
+    body .easy-to-work .navigation,
+    body .menu ul li {
+        display: block;
+    }
+
+    body > header nav.menu {
+        line-height: 28px;
+    }
+}
+
+@media (min-width:601px) and (max-width:700px){
+    .profile-menu > li {
+        padding-left: 28px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:991px){
+    .user-profile main > section > .container {
+    padding: 0;
+    }
+    body.user-profile main {
+    margin-top: 0;
+    }
+    body.user-profile aside {
+    width: 20%;
+    }
+    body.user-profile .profile-content {
+    background: white none repeat scroll 0 0;
+    float: left;
+    min-height: calc(100vh - 320px);
+    padding: 25px;
+    width: 80%;
+    }
+    body.user-profile .menu li.logo {
+    display: block;
+    padding-left: 20px;
+    }
+    .bar-chart .image > img {
+    width: 100% !important;
+    }
+    .refer-someone .img img {
+    width: 100%;
+    }
+}
+body,
+html {
+    background: #f6f4f9 none repeat scroll 0 0;
+}
+.profile-content > section{
+    display:none;
+}
+.user-profile .profile-content {
+    background: white none repeat scroll 0 0;
+    float: left;
+    width: 86%;
+    padding: 25px;
+    min-height: calc(100vh - 320px);
+    min-height: -moz-calc(100vh - 320px);
+    min-height: -ms-calc(100vh - 320px);
+    min-height: -webkit-calc(100vh - 320px);
+}
+.user-profile aside {
+    float: left;
+    width: 14%;
+}
+.profile-menu > li {
+    color: #1d54a1;
+    cursor: pointer;
+    line-height: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+.profile-menu > li:hover,
+.profile-menu > li.active {
+    background: white none repeat scroll 0 0;
+}
+.profile-menu > li.active{
+    color:#444;
+}
+.profile-menu > li.download-now:before,
+.profile-menu > li.my-acc:before,
+.profile-menu > li.add-credits:before,
+.profile-menu > li.referal:before,
+.profile-menu > li.transactions:before,
+.profile-menu > li.forum:before,
+.profile-menu > li.my-downloads:before,
+.profile-menu > li.payment-details:before,
+.profile-menu > li.overview:before{
+    background-repeat: no-repeat !important;
+  content: "";
+  height: 16px;
+  left: 8px;
+  position: absolute;
+  top: 21px;
+  transform: translate(0px, -50%);
+  -moz-transform: translate(0px, -50%);
+  -ms-transform: translate(0px, -50%);
+  -webkit-transform: translate(0px, -50%);
+  width: 15px;
+}
+
+.profile-menu > li.download-now:before{
+    background:url('../images/menu_download.png');
+}
+.profile-menu > li.my-acc:before{
+    background:url('../images/menu_account.png');
+}
+.profile-menu > li.add-credits:before{
+    background:url('../images/menu_credits.png');
+}
+.profile-menu > li.referal:before{
+    background:url('../images/menu_referal.png');
+}
+.profile-menu > li.transactions:before{
+    background:url('../images/menu_transactions.png');
+}
+.profile-menu > li.forum:before{
+    background:url('../images/menu_forum.png');
+}
+.profile-menu > li.my-downloads:before{
+    background:url('../images/menu_my_downloads.png');
+}
+.profile-menu > li.payment-details:before{
+    background:url('../images/menu_afiliate.png');
+}
+.profile-menu > li.overview:before{
+    background:url('../images/menu_overview.png');
+}
+
+.profile-menu > li.download-now.active:before{
+    background:url('../images/menu_download_gray.png');
+}
+.profile-menu > li.my-acc.active:before{
+    background:url('../images/menu_account_gray.png');
+}
+.profile-menu > li.add-credits.active:before{
+    background:url('../images/menu_credits_gray.png');
+}
+.profile-menu > li.referal.active:before{
+    background:url('../images/menu_referal_gray.png');
+}
+.profile-menu > li.transactions.active:before{
+    background:url('../images/menu_transactions_gray.png');
+}
+.profile-menu > li.forum.active:before{
+    background:url('../images/menu_forum_gray.png');
+}
+.profile-menu > li.my-downloads.active:before{
+    background:url('../images/menu_my_downloads_gray.png');
+}
+.profile-menu > li.payment-details.active:before{
+    background:url('../images/menu_afiliate_gray.png');
+}
+.profile-menu > li.overview.active:before{
+    background:url('../images/menu_overview_gray.png');
+}
+.user-profile main {
+    margin-top: 20px;
+}
+.profile-content > section .title,
+.profile-content > section > .h4.thin {
+    margin-bottom: 20px;
+}
+.gray-list li,
+.subscription-list > li {
+    background: #f6f4f9 none repeat scroll 0 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 0 10px 15px;
+}
+.subscription-list > li .col-md-3 > div {
+    line-height: 40px;
+}
+.vaucher-form {
+    margin: 40px auto;
+    width: 340px;
+}
+.download-now-content textarea {
+    color: #619e25;
+    font-style: italic;
+    min-height: 180px;
+}
+.tx-green{
+    color:#619e25;
+}
+select{
+    border-radius:3px;
+    border: 1px solid #cecece;
+    padding:1px 5px;
+}
+.gray-list li img{
+    height: 20px;
+  margin-right: 10px;
+}
+.gray-list li.error {
+    background: #f76162 none repeat scroll 0 0;
+    color: white;
+}
+.user-profile .input select,
+.user-profile .input textarea,
+.user-profile .input input {
+    border: 1px solid #cfcfcf;
+    padding: 8px 10px;
+}
+.user-profile .input > div {
+    margin-bottom: 3px;
+}
+.my-downloads-content .fa.fa-trash {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 10px;
+}
+ul.pagination li .page-link {
+    border: medium none;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+.user-profile .checkbox label,
+.user-profile .radio label{
+    padding-left:0px;
+}
+/*table thead {
+    background: #fdb900 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: white;
+}
+table tr td,
+table tr th {
+    border: medium none !important;
+    padding: 12px !important;
+}
+table thead tr {
+    border: medium none !important;
+}
+.table-bordered {
+    border: medium none !important;
+    border-radius: 3px !important;
+}
+table tbody tr {
+    background: #f6f4f9 none repeat scroll 0 0;
+    border-top: 5px solid white;
+    font-weight: 300;
+    overflow: hidden;
+}*/
+.table-bordered tbody tr{
+    background: #f6f4f9 none repeat scroll 0 0;
+    border-top: 5px solid white;
+    font-weight: 300;
+    overflow: hidden;
+}
+.table-bordered thead tr{
+    border: medium none !important;
+}
+.table-bordered tr th {
+    border: medium none !important;
+    padding: 12px !important;
+}
+.table-bordered thead {
+    background: #fdb900 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 3px;
+    color: white;
+}
+.overview-list li {
+    line-height: 25px;
+}
+.overview-list {
+    background: #f6f4f9 none repeat scroll 0 0;
+    border-radius: 5px;
+    padding: 20px 4px 4px;
+}
+.overview-list .fs13.cf.clr {
+    background: white none repeat scroll 0 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+.overview-list li {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 6px;
+}
+.gray-item{
+    background: #f6f4f9 none repeat scroll 0 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px;
+}
+.referal-content .earnings-per-day .input {
+    /*margin: 0;*/
+    padding: 0 7px;
+    position:relative;
+    font-style: italic;
+}
+.referal-content .end-date:before,
+.referal-content .start-date:before{
+    background:url("../images/calendar.png") repeat scroll 0 0 / 15px 15px;
+  content: "";
+  height: 15px;
+  position: absolute;
+  right: 16px;
+  top: 13px;
+  width: 15px;
+  z-index: 11;
+}
+.referal-content .end-date input,
+.referal-content .start-date input {
+    padding-right: 30px;
+}
+.refer-someone .col-md-2.thin {
+    line-height: 40px;
+}
+.referal-content textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+.download-info .value {
+    float: right;
+}
+.download-info .caption {
+    float: left;
+}
+.download-info {
+    /*margin-top: -30px;*/
+}
+.xs-show{
+    display: none;
+}
+.change-button{
+    font-size: 15.5px;
+    margin-top: 5px;
+}
+div.g-recaptcha > div:first-child {
+   margin: 0 auto;
+}

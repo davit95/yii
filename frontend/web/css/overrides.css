@@ -1,0 +1,63 @@
+/**
+ * User's profile. Referral
+ */
+.earnings-per-day .button a,button{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/**
+ * Reseller's profile
+ */
+ .voucher-details .row {
+     margin-bottom: 10px;
+ }
+
+ #voucher-suspend-form {
+     display: inline-block;
+ }
+
+/**
+ * Checkout form
+ */
+
+section.order-checkout {
+    padding: 50px 0 80px;
+}
+
+.checkout-form-wrapper>form {
+    background: #f4f5f9 none repeat scroll 0 0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.btn-container {
+    margin-top: 20px;
+}
+
+
+/**
+ * Misc
+ */
+ul.pagination li > * {
+    border: medium none;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+.yellow-btn.disabled {
+    background: #eeeeee none repeat scroll 0 0;
+    color: #838383 !important;
+}
+
+.overview .description {
+    padding: 50px 0px;
+}
+
+.copy-to-clipboard {
+    color: #337ab7;
+}
+
+.copy-to-clipboard:hover {
+    color: #23527c;
+}

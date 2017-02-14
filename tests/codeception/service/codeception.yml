@@ -1,0 +1,31 @@
+namespace: tests\codeception\service
+actor: Tester
+paths:
+    tests: .
+    log: _output
+    data: _data
+    helpers: _support
+settings:
+    bootstrap: _bootstrap.php
+    suite_class: \PHPUnit_Framework_TestSuite
+    colors: true
+    memory_limit: 1024M
+    log: true
+config:
+    # the entry script URL (with host info) for functional and acceptance tests
+    # PLEASE ADJUST IT TO THE ACTUAL ENTRY SCRIPT URL
+    test_entry_url: http://this.local/plg/server/service/web/index-test.php
+    test_contents_url: http://this.local/plg/server/tests/codeception/service/_content
+    test_local_storage_root: c:\\storage
+    test_ftp_storage_host: 127.0.0.1
+    test_ftp_storage_port: 21
+    test_ftp_storage_username: plgtest
+    test_ftp_storage_password: 123123
+    test_ftp_storage_root: storage
+    test_mongo_storage_dsn: mongodb://storage:rebel15@92.222.91.252:27017/storage
+    test_mongo_storage_root: fs
+    test_sftp_storage_host: 92.222.91.252
+    test_sftp_storage_port: 22
+    test_sftp_storage_username: storage
+    test_sftp_storage_password: rebel15
+    test_sftp_storage_root: home/storage/content 

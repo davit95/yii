@@ -1,0 +1,93 @@
+<?php
+
+use yii\db\Migration;
+use yii\rbac\DbManager;
+use yii\base\InvalidConfigException;
+
+class m161130_152102_init_rbac extends Migration
+{
+    /**
+     * @throws yii\base\InvalidConfigException
+     * @return DbManager
+     */
+    protected function getAuthManager()
+    {
+        $authManager = Yii::$app->getAuthManager();
+        if (!$authManager instanceof DbManager) {
+            throw new InvalidConfigException('You should configure "authManager" component to use database before executing this migration.');
+        }
+        return $authManager;
+    }
+
+    public function up()
+    {
+        $authManager = $this->getAuthManager();
+        $this->db = $authManager->db;
+
+        $tableOptions = null;
+        if ($this->db->driverName === 'mysql') {
+            // http://stackoverflow.com/questions/766809/whats-the-difference-between-utf8-general-ci-and-utf8-unicode-ci
+            $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
+        }
+
+        $this->createTable($authManager->ruleTable, [
+            'name' => $this->string(64)->notNull(),
+            'data' => $this->text(),
+            'created_at' => $this->integer(),
+            'updated_at' => $this->integer(),
+            'PRIMARY KEY (name)',
+        ], $tableOptions);
+
+        $this->createTable($authManager->itemTable, [
+            'name' => $this->string(64)->notNull(),
+            'type' => $this->integer()->notNull(),
+            'description' => $this->text(),
+            'rule_name' => $this->string(64),
+            'data' => $this->text(),
+            'created_at' => $this->integer(),
+            'updated_at' => $this->integer(),
+            'PRIMARY KEY (name)',
+            'FOREIGN KEY (rule_name) REFERENCES ' . $authManager->ruleTable . ' (name)'
+        ], $tableOptions);
+        $this->createIndex('idx_auth_item_type', $authManager->itemTable, 'type');
+
+        $this->createTable($authManager->itemChildTable, [
+            'parent' => $this->string(64)->notNull(),
+            'child' => $this->string(64)->notNull(),
+            'PRIMARY KEY (parent, child)',
+            'FOREIGN KEY (parent) REFERENCES ' . $authManager->itemTable . ' (name)',
+            'FOREIGN KEY (child) REFERENCES ' . $authManager->itemTable . ' (name)'
+        ], $tableOptions);
+
+        $this->createTable($authManager->assignmentTable, [
+            'item_name' => $this->string(64)->notNull(),
+            'user_id' => $this->string(64)->notNull(),
+            'created_at' => $this->integer(),
+            'PRIMARY KEY (item_name, user_id)',
+            'FOREIGN KEY (item_name) REFERENCES ' . $authManager->itemTable . ' (name) ON DELETE CASCADE ON UPDATE CASCADE',
+        ], $tableOptions);
+
+    }
+
+    public function down()
+    {
+        $authManager = $this->getAuthManager();
+        $this->db = $authManager->db;
+
+        $this->dropTable($authManager->assignmentTable);
+        $this->dropTable($authManager->itemChildTable);
+        $this->dropTable($authManager->itemTable);
+        $this->dropTable($authManager->ruleTable);
+    }
+
+    /*
+    // Use safeUp/safeDown to run migration code within a transaction
+    public function safeUp()
+    {
+    }
+
+    public function safeDown()
+    {
+    }
+    */
+}

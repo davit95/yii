@@ -1,0 +1,9 @@
+<proxies>
+    <proxy>
+        <protocol>tcp</protocol>
+        <ip>127.0.0.1</ip>
+        <port>3128</port>
+        <username>User</username>
+        <password>Pass</password>
+    </proxy>
+</proxies>
